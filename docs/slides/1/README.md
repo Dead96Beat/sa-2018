@@ -7,7 +7,7 @@
 
 ## 课程网站
 
-![](../images/url.png)
+![](images/url.png)
 
 https://github.com/njuics/sa-2018 
 
@@ -17,7 +17,7 @@ https://github.com/njuics/sa-2018
 
 ## QQ群
 
- ![](../images/qq.png) <!-- .element height="60%" width="35%" -->
+ ![](images/qq.png) <!-- .element height="60%" width="35%" -->
 
 ---
 
@@ -79,14 +79,14 @@ Software Architecture
 
 ## Architecture
 
-![](../images/architecture.png)  <!-- .element height="70%" width="70%" -->
+![](images/architecture.png)  <!-- .element height="70%" width="70%" -->
 
 
 ---
 
 ## Architecture
 
-![](../images/you.png) <!-- .element height="70%" width="70%" -->
+![](images/you.png) <!-- .element height="70%" width="70%" -->
 
 ---
 
@@ -96,7 +96,7 @@ Software Architecture
 
 Bjarne Stroustrup（比雅尼·斯特劳斯特鲁普）
 
-![](../images/Bjarne.png) 
+![](images/Bjarne.png) 
 
 Our civilization runs on software. 
 		
@@ -186,7 +186,7 @@ Parnas, 1985
 ## Software development has been, is, and remains hard
 
 
-![](../images/challenges.png)  <!-- .element height="50%" width="70%" -->
+![](images/challenges.png)  <!-- .element height="50%" width="70%" -->
 
 ---
 
@@ -243,7 +243,7 @@ Clements et al., 1997
 
 ## Overall
 
-![](../images/overall.png)  <!-- .element height="50%" width="45%" -->
+![](images/overall.png)  <!-- .element height="50%" width="45%" -->
 
 <small>Architectural decisions are the most fundamental decisions. Changing them will have significant ripple effects. </small>
 
@@ -261,7 +261,7 @@ Clements et al., 1997
 
 ## SA as communication among stakeholders
 
-![](../images/communication.png)  <!-- .element height="60%" width="60%" -->
+![](images/communication.png)  <!-- .element height="60%" width="60%" -->
 
 
 ---
@@ -281,7 +281,7 @@ Clements et al., 1997
 
 ## mis-communication
 
-![](../images/mis-communication.png)  <!-- .element height="70%" width="80%" -->
+![](images/mis-communication.png)  <!-- .element height="70%" width="80%" -->
 
 
 ---
@@ -303,7 +303,7 @@ Clements et al., 1997
 
 ## Swedish Warship Vasa
 
-![](../images/vasa.png)  <!-- .element height="60%" width="60%" -->
+![](images/vasa.png)  <!-- .element height="60%" width="60%" -->
 
 
 70 meters long, carry 300 soldiers,  64 heavy guns mounted on  two decks
@@ -313,7 +313,7 @@ Clements et al., 1997
 
 ## Vasa-Me
 
-![](../images/vasa-me.png)  <!-- .element height="50%" width="60%" -->
+![](images/vasa-me.png)  <!-- .element height="50%" width="60%" -->
 
 ---
 
@@ -354,13 +354,13 @@ Clements et al., 1997
 
 ## 我们到底讲什么？
 
-![](../images/contents.png)  <!-- .element height="50%" width="60%" -->
+![](images/contents.png)  <!-- .element height="50%" width="60%" -->
 
 ---
 
 ## 内容
 
-![](../images/framework.png)  <!-- .element height="50%" width="60%" -->
+![](images/framework.png)  <!-- .element height="50%" width="60%" -->
 
 ---
 
@@ -420,4 +420,4 @@ http://aosabook.org/
 ---
 
 
-![](../images/welcome.png)  <!-- .element height="30%" width="60%" -->
+![](images/welcome.png)  <!-- .element height="30%" width="60%" -->
