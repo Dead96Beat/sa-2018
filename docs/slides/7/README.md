@@ -15,7 +15,7 @@ mvn exec:java （等同于 java App）
 
 ## Web Applications
 
- ![](images/webapp.png) 
+ ![](images/webapp.png) <!-- .element height="50%" width="50%" -->
 
 ---
 
@@ -126,22 +126,16 @@ WINDIR="C:\Windows"
 ## Servlet
 
 - Little Java programs…
-   - Contain application-specific code
-   - Web server does generic part of request handling
-   - Servlets run “in” the web server and do some of the handling
-- Highlights
-   - Standard!
-   - Efficiency (much better than CGI)
-   - Security (Java!)
-   - Persistence (handle multiple requests)
+    - Contain application-specific code
+    - Web server does generic part of request handling
+    - Servlets run “in” the web server and do some of the handling
+
+![](images/servlet.png) <!-- .element height="20%" width="30%" -->
 
 
 ---
 
 ## Servlet
-
- ![](images/servlet.png) 
-
 
 - Client sends a request to server
 - Server starts a servlet
@@ -153,16 +147,28 @@ WINDIR="C:\Windows"
 
 ---
 
-
 ## Servlet
 
-- Advantages:
-  - Running a servlet doesn’t require creating a separate process each time
-  - A servlet stays in memory, so it doesn’t have to be reloaded each time
-  - There is only one instance handling multiple requests, not a separate instance for every request
-  - Untrusted servlets can be run in a “sandbox”
-- Disadvantage:
-  - Less choice of languages (CGI scripts can be in any language)
+- Highlights
+    - Standard!
+    - Efficiency (much better than CGI)
+    - Security (Java!)
+    - Persistence (handle multiple requests)
+
+![](images/servlet.png) <!-- .element height="20%" width="30%" -->
+
+
+---
+
+
+## Advantages and Disadvantage
+
+- Advantages
+     - Running a servlet doesn’t require creating a separate process each time
+     - A servlet stays in memory, so it doesn’t have to be reloaded each time. It handles multiple requests
+     - Untrusted servlets can be run in a “sandbox”
+- Disadvantage
+     - Less choice of languages (CGI scripts can be in any language)
 
 
 ---
@@ -174,7 +180,7 @@ WINDIR="C:\Windows"
 
 ---
 
-## Tomcat
+## Tomcat and Apache
 
 - Tomcat is the Servlet Engine than handles servlet requests for Apache
   - Tomcat is a “helper application” for Apache
@@ -182,9 +188,6 @@ WINDIR="C:\Windows"
 - Apache can handle many types of web services
   - Apache can be installed without Tomcat
   - Tomcat can be installed without Apache
-- It’s easier to install Tomcat standalone than as part of Apache
-  - By itself, Tomcat can handle web pages, servlets, and JSP
-- Apache and Tomcat are open source (and therefore free)
 
 ---
 
@@ -200,7 +203,6 @@ WINDIR="C:\Windows"
 ## HTTP Requests
 
 - When a request is submitted from a Web page, it is almost always a GET or a POST request
-- The HTTP `<form>` tag has an attribute action, whose value can be "get" or "post"
 - The `GET` action results in the form information being put after a `?` in the URL
   - For example: http://www.google.com/search?hl=en&ie=UTF-8&oe=UTF-8&q=servlets
   - The `&` separates the various parameters
@@ -212,16 +214,10 @@ WINDIR="C:\Windows"
 ## Requests
 
 - The service method dispatches the following kinds of requests: `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST`, `PUT`, and `TRACE`
-  - A `GET` request is dispatched to the `doGet(HttpServletRequest request, HttpServletResponse response)` method
-  - A `POST` request is dispatched to the `doPost(HttpServletRequest request, HttpServletResponse response)` method
+  - A `GET` request is dispatched to the `doGet` method
+  - A `POST` request is dispatched to the `doPost` method
   - These are the two methods you will usually override
-  - `doGet` and `doPost` typically do the same thing, so usually you do the real work in one, and have the other just call it
-
-  ``` java
-  public void doGet(HttpServletRequest request, HttpServletResponse response) {
-    doPost(request, response);
-  }
-  ```
+  
 
 ---
 
@@ -235,9 +231,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class Servlet extends HttpServlet {
-  public void doGet(HttpServletRequest req,
-                    HttpServletResponse res)
-  throws IOException, ServletException {
+  public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
          res.setContentType("text/html");
          PrintWriter out = res.getWriter();
          out.println("<html><head><title>Sample Servlet");
@@ -247,9 +241,7 @@ public class Servlet extends HttpServlet {
          out.println(”<p>Key is " + req.getParameter("KEY"));
          out.println(”</p></body></html>");
     }
- }
-
-
+}
 ```
 
 ---
@@ -287,13 +279,13 @@ Add a web interface for our Spring batch demo application
 How about “changes”？
 
 - Context
-  - 人机交互界面设计
+     - 人机交互界面设计
 - Problem
-  - 系统功能的变化要求用户界面的改变
-  - 系统升级要求用户界面的升级
-  - 系统平台的改变（移植）要求用户界面随之改变
-  - 用户界面的改变需足够方便
-  - 用户界面的改变不应影响系统功能本身
+     - 系统功能的变化要求用户界面的改变
+     - 系统升级要求用户界面的升级
+     - 系统平台的改变（移植）要求用户界面随之改变
+     - 用户界面的改变需足够方便
+     - 用户界面的改变不应影响系统功能本身
 
 
 
@@ -330,16 +322,6 @@ How about “changes”？
 
 ---
 
-## Pattern特点 
-
-- 解决在特定情况下经常出现的需要解决的设计问题
-- 记录并保存了已有的优良的设计经验
-- 支持构造具有既定属性的系统
-- 但是，依然是一个抽象、一般性的解决方案，而非预制的、可直接使用的方案
-
-
----
-
 ## Examples
 
 - Graphical Editing Framework (GEF)
@@ -355,7 +337,7 @@ How about “changes”？
 
 - The Graphical Editing Framework (GEF) allows developers to take an existing application model and quickly create a rich graphical editor.
 
-![](images/gef.png)
+![](images/gef.png) <!-- .element height="50%" width="50%" -->
 
 
 
@@ -366,7 +348,7 @@ How about “changes”？
 - Spring is a non-invasive application development framework that aims to make the life easier for Java/J2EE developers, by
   - Providing a DI (or IoC) container.
   - Providing an AOP framework that delivers services such as declarative transaction management.
-  - Providing abstraction for more complicated (J2EE) services and APIs, which removes lot of ”boilerplate code”.
+  - Providing abstraction for more complicated services and APIs by removing ”boilerplate code”.
   - DI + AOP + Service Abstraction = Power to the POJO
 
 ---
@@ -440,4 +422,4 @@ $ mvn jetty:run
 
 ---
 
-END
+# THE END
