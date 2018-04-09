@@ -161,13 +161,13 @@ WINDIR="C:\Windows"
 ---
 
 
-## Advantages and Disadvantage
+## Pros and Cons
 
-- Advantages
+- Pros
      - Running a servlet doesn’t require creating a separate process each time
      - A servlet stays in memory, so it doesn’t have to be reloaded each time. It handles multiple requests
      - Untrusted servlets can be run in a “sandbox”
-- Disadvantage
+- Cons
      - Less choice of languages (CGI scripts can be in any language)
 
 
