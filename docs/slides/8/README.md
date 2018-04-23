@@ -313,5 +313,168 @@ A Spring Framework application based on JSP, Thymeleaf, Spring MVC, Spring Data 
 
 
 ---
+## What’s Next?
 
-# TBC
+
+![](images/next.png) 
+
+---
+
+## Scalability
+
+![](images/scalability.png) 
+
+
+Scale-up VS. Scale-out
+
+---
+
+## To Scale-out
+
+![](images/lb.png)  <!-- .element height="60%" width="60%" -->
+
+Load balancing
+
+---
+
+## Load Balancing
+
+Transport-level
+
+VS.
+
+Application-level
+
+---
+
+## Transport-level Load Balance
+
+
+![](images/dns.png) <!-- .element height="60%" width="50%" -->
+
+
+DNS-based load balancing
+
+---
+
+## Transport-level Load Balance
+
+
+![](images/nat.png) <!-- .element height="70%" width="80%" -->
+
+
+TCP/IP server load balancing
+
+
+---
+
+## Cache
+
+![](images/cache.png) <!-- .element height="70%" width="80%" -->
+
+Object n -> Cache Server m ?
+
+---
+
+## Consistent hashing
+
+
+![](images/ch.png) 
+
+```
+Hash(object1) = key1；
+Hash(object2) = key2；
+Hash(object3) = key3；
+Hash(object4) = key4;
+Hash(NODE1) = KEY1;
+Hash(NODE2) = KEY2;
+Hash(NODE3) = KEY3;
+```
+
+---
+
+## Remove a node
+![](images/delm.png) 
+
+---
+
+## Add a node
+![](images/addm.png) 
+
+---
+
+## Balancing
+
+![](images/virtualnode.png) 
+
+![](images/virtualnodes.png) <!-- .element height="35%" width="40%" -->
+
+---
+
+## What’s More?
+
+Application session data and… 
+Client affinity
+
+---
+
+## Application-level load balance
+
+
+![](images/applevel.png) <!-- .element height="70%" width="80%" -->
+
+
+Client identification: Parameters vs. Cookies
+
+---
+
+## Application-level load balance
+
+![](images/redirect.png) 
+
+HTTP redirect-based server load balancer
+
+---
+
+## Application-level load balance
+
+
+![](images/ss.png) <!-- .element height="70%" width="80%" -->
+
+
+Server-side server load balancer interceptor
+
+---
+
+## Application-level load balance
+
+
+![](images/cside.png) <!-- .element height="70%" width="80%" -->
+
+Client-side server load balancer interceptor
+
+
+---
+
+## Session?
+
+![](images/session.png) 
+
+---
+
+## Tomcat Cluster
+
+![](images/tomcat.png) 
+
+---
+
+## Session Management
+
+![](images/msm.png) 
+
+
+https://github.com/magro/memcached-session-manager
+
+---
+
+# END
